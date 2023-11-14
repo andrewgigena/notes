@@ -267,7 +267,8 @@ En las tests unitarias, a menudo es necesario aislar su código de dependencias 
 
 La simulación de dependencias y servicios externos es crucial para escribir tests unitarias enfocadas y confiables. Al reemplazar las dependencias con objetos simulados controlados o comportamientos simulados, puede probar su código de manera aislada y verificar su comportamiento en diferentes escenarios.
 
-## Técnicas de Pruebas de Integración
+## Técnicas de pruebas de integración
+
 ### Pruebas de Vistas y Plantillas de Django con Datos Realistas
 Las tests de integración te permiten probar la interacción entre diferentes componentes de la aplicación Django, como vistas, plantillas y los datos subyacentes. Al simular escenarios del mundo real, puedes asegurarte de que estos componentes funcionen juntos como se espera. Aquí tienes algunas técnicas para probar la integración de vistas y plantillas de Django:
 
@@ -422,6 +423,7 @@ class MyE2ETestCase(StaticLiveServerTestCase):
 ```
 
 ## Estrategias de Pruebas para Aplicaciones Django
+
 ### Desarrollo Guiado por Pruebas (TDD)
 El desarrollo guiado por tests es un enfoque en el que las tests se escriben antes de la implementación real del código.
 
@@ -463,7 +465,7 @@ Las técnicas para las tests de rendimiento incluyen:
 - Pruebas de estrés: Llevar la aplicación a sus límites al superar la carga esperada para evaluar su comportamiento en condiciones extremas.
 - Pruebas de resistencia: Evaluar la estabilidad de la aplicación durante un período prolongado para identificar posibles fugas de memoria o problemas de consumo de recursos.
 
-### Herramientas para tests de rendimiento de aplicaciones Django:
+Herramientas para tests de rendimiento de aplicaciones Django:
 
 - Locust: Una herramienta escalable, fácil de usar y scriptable para tests de rendimiento que le permite definir escenarios de comportamiento de usuario utilizando código Python.
 - Apache JMeter: Una herramienta potente y extensible basada en Java para tests de carga, capaz de simular una amplia variedad de escenarios y generar informes detallados.
@@ -616,7 +618,7 @@ test:
   script:
     - echo "Running tests..."
     - pytest
-
+    
 deploy:
   stage: deploy
   script:
@@ -716,5 +718,7 @@ Las tests son un viaje continuo y siempre hay más que aprender y explorar. Aqu�
 - Experimente con diferentes enfoques y técnicas de tests, como tests basadas en propiedades, tests de fuzz o tests de mutación, para descubrir más casos límite y problemas potenciales.
 - Explore temas adicionales relacionados con las tests, como la optimización de rendimiento, tests de carga, tests de API o tests móviles, según las necesidades específicas de sus proyectos.
 - Participe en las vibrantes comunidades de Django y tests, participe en discusiones y comparta sus experiencias y conocimientos con otros.
+
+Hice un proyecto de Django de nivel intermedio basado en el Desarrollo Guiado por Pruebas (TDD). Puede echar un vistazo aquí. Es una aplicación de criptomonedas que utiliza la API de CoinGecko para obtener los últimos precios de criptomonedas y los muestra en una tabla. También cuenta con una funcionalidad de búsqueda que le permite buscar una criptomoneda en particular.
 
 Recuerde, las tests no se trata solo de encontrar errores; se trata de construir software confiable, mantenible y de alta calidad. Adopte la mentalidad de tests y permita que las tests sean una parte integral de su proceso de desarrollo de Django. ¡Felices tests!
